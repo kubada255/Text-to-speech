@@ -19,10 +19,10 @@ func main() {
 	var filename string
 	fmt.Scanln(&filename)
 	fmt.Println("You typed:", filename)
-	var jezyk string
+	var language string
 	fmt.Println("Type language")
-	fmt.Scanln(&jezyk)
-	speech := htgotts.Speech{Folder: "audio", Language: jezyk}
+	fmt.Scanln(&language)
+	speech := htgotts.Speech{Folder: "audio", Language: language}
 
 	// Zapisywanie przemówienia pod konkretą nazwą pliku
 	speech.CreateSpeechFile(text, filename)
